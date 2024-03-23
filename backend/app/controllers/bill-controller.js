@@ -97,7 +97,7 @@ export const deleteBill = async (req, res) => {
 export const createPayment = async (req, res) => {
 
 
-    const stripe = stripePackage("sk_test_51OKSOIHp2pwGV5UyMNXGPgsBX2K3fppUEpYseoOVkuGN8PZt3KWhh4wKWAjazQNM71MjLw5oxA6g0yEyv4eVvl1k00s2hsiYcb");
+    const stripe = stripePackage(process.env.stripe_key);
 
     const payment = req.body
 
