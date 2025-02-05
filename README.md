@@ -65,9 +65,3 @@ Effortlessly upload medical images and scans for a specific patient, facilitatin
 ## Documentation
 - Explore detailed API specifications for each module in the docs directory. The documentation provides insights into request methods, request bodies, response formats, error responses, and required schemas.
 
-
-## Contributors
-- Aayush Shetty
-- Roshan Shetty 
-- Saurabh Gangal 
-- Prasanna Pingale
