@@ -40,7 +40,7 @@ const TimeSlotList: React.FC<TimeSlotListProps> = ({ timeSlots }) => {
   const handleCheckout = async() => {
     // Navigate to a different route, replace '/checkout' with your desired route
 
-    const stripe = await loadStripe('pk_test_51OKSOIHp2pwGV5Uy5P0ueIMsXMPaHlALVmYjDOIfUUiCw5kd8YahZj3TIt8NgVRl02bKsOzXXdqCCRfOPduuQLfA00mCvsH65n');
+    const stripe = await loadStripe(process.env.STRIPE_SECRET_KEY);
 
     const body = {
       name: doctor.name,
@@ -96,3 +96,4 @@ const TimeSlotList: React.FC<TimeSlotListProps> = ({ timeSlots }) => {
 };
 
 export default TimeSlotList;
+
